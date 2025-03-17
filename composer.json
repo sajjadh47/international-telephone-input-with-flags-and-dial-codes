@@ -1,0 +1,8 @@
+{
+	"require": {
+		"geoip2/geoip2": "^2.13"
+	},
+	"config": {
+		"autoloader-suffix": "International_Telephone_Input_With_Flags_And_Dial_Codes"
+	}
+}
