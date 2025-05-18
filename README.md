@@ -1,13 +1,8 @@
 # International Telephone Input With Flags And Dial Codes
 
 **Tags:** input, form, form-input, country-flag, dial-codes \
-**Contributors:** sajjad67 \
-**Requires at least:** 5.6 \
-**Tested up to:** 6.7 \
-**Stable tag:** 2.0.0 \
-**Requires PHP:** 8.0 \
-**License:** GPLv2 \
-**License URI:** http://www.gnu.org/licenses/gpl-2.0.html
+**Tested up to:** 6.8 \
+**Requires PHP:** 8.1
 
 Turn Your Simple Telephone Input Into International Dial Codes Input
 
@@ -17,17 +12,14 @@ Plugin turns the standard telephone input into an International Telephone Input 
 
 ### Features
 
-* Option To Enable Plugin Feature
-* Option To Select Specific Input Using CSS3 Specification Class/ID/Tag
-* Option To Exclude Countries
-* Option To Only Show Specific Countries
-* Option To Auto Detect User Country
-* Fallback To Ajax For Detecting Country To Bypass Page Cache
+- Option To Enable Plugin Feature
+- Option To Select Specific Input Using CSS3 Specification Class/ID/Tag
+- Option To Exclude Countries
+- Option To Only Show Specific Countries
+- Option To Auto Detect User Country
+- Fallback To Ajax For Detecting Country To Bypass Page Cache
 
 Please include a statement in your Privacy Policy informing users that their country may be detected based on their IP address. However, no personally identifiable information is stored or retained.
-
-Interested in contributing to International Telephone Input With Flags And Dial Codes?
-Contact me at sagorh672(at)gmail(dot)com
 
 ## Screenshots
 
@@ -38,7 +30,6 @@ Contact me at sagorh672(at)gmail(dot)com
 ### 2. Front End Input Field
 
 ![Front End Input Field](https://ps.w.org/international-telephone-input-with-flags-and-dial-codes/assets/screenshot-2.png)
-
 
 ## Frequently Asked Questions
 
@@ -56,11 +47,14 @@ If successful, click Activate Plugin to activate it, or Return to Plugin Install
 
 ## Changelog
 
+### 2.0.1
+- Checked for latest wp version 6.8
+
 ### 2.0.0
-* Major changes in codebase. Compatibility checkup for latest wp version 6.7
+- Major changes in codebase. Compatibility checkup for latest wp version 6.7
 
 ### 1.0.5
-* Minor Update.. tested for latest wp compatibility. Updated MaxMind Geo DB To Latest Version.
+- Minor Update.. tested for latest wp compatibility. Updated MaxMind Geo DB To Latest Version.
 
 ### 1.0.4
 - Added compatibility support to cache plugins. Updated MaxMind Geo DB To Latest Version.

@@ -2,10 +2,10 @@
 Tags: input, form, form-input, country-flag, dial-codes
 Contributors: sajjad67
 Author: Sajjad Hossain Sagor
-Tested up to: 6.7
+Tested up to: 6.8
 Requires at least: 5.6
-Stable tag: 2.0.2
-Requires PHP: 8.0
+Stable tag: 2.0.1
+Requires PHP: 8.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,9 +23,6 @@ Plugin turns the standard telephone input into an International Telephone Input 
 * Fallback To Ajax For Detecting Country To Bypass Page Cache
 
 Please include a statement in your Privacy Policy informing users that their country may be detected based on their IP address. However, no personally identifiable information is stored or retained.
-
-Interested in contributing to International Telephone Input With Flags And Dial Codes?
-Contact me at sagorh672(at)gmail(dot)com
 
 == Screenshots ==
 1. Settings page of the plugin

@@ -5,6 +5,6 @@ jQuery( document ).ready( function( $ )
 {
 	$( 'select.excludeCountries, select.onlyCountries' ).select2(
 	{
-		placeholder: INTERNATIONAL_TELEPHONE_INPUT_WITH_FLAGS_AND_DIAL_CODES.select_country_txt_i18n
+		placeholder: InternationalTelephoneInputWithFlagsAndDialCodes.selectCountryTxt
 	} );
 } );
