@@ -177,7 +177,7 @@ class International_Telephone_Input_With_Flags_And_Dial_Codes_Public {
 			$visitor_geo     = $reader->country( $this->get_visitor_ip() );
 			$visitor_country = $visitor_geo->country->isoCode;
 		} catch ( Exception $e ) {
-			$visitor_country = 'bd';
+			$visitor_country = '';
 		}
 
 		return strtolower( $visitor_country );
