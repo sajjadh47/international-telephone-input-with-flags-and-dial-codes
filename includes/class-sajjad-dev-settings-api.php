@@ -15,13 +15,13 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 	 *
 	 * This class provides an interface for interacting with the WordPress Options API.
 	 *
-	 * @since    PluginVersion
+	 * @since    2.0.0
 	 */
 	class Sajjad_Dev_Settings_API {
 		/**
 		 * Settings sections array
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    protected
 		 * @var       array
 		 */
@@ -30,7 +30,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Settings fields array.
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    protected
 		 * @var       array
 		 */
@@ -39,7 +39,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Allowed html tags array.
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @static
 		 * @var       array
@@ -318,7 +318,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Enqueue scripts and styles for the settings page.
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 */
 		public function __construct() {
@@ -328,7 +328,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Enqueue scripts and styles
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 */
 		public function admin_enqueue_scripts() {
@@ -345,7 +345,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Set settings sections
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     array $sections Setting sections array.
 		 */
@@ -358,7 +358,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Add a single section
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     array $section Single section.
 		 */
@@ -371,7 +371,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Set settings fields
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     array $fields Settings fields array.
 		 */
@@ -384,7 +384,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Add a field
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     array $section Single section.
 		 * @param     array $field   Field data.
@@ -414,7 +414,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		 * This function gets the initiated settings sections and fields. Then
 		 * registers them to WordPress and ready for use.
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 */
 		public function admin_init() {
@@ -477,7 +477,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Get field description for display
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     array $args Settings field args.
 		 */
@@ -488,7 +488,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Displays a text field for a settings field
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     array $args Settings field args.
 		 */
@@ -506,7 +506,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Displays a url field for a settings field
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     array $args Settings field args.
 		 */
@@ -517,7 +517,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Displays a number field for a settings field
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     array $args Settings field args.
 		 */
@@ -538,7 +538,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Displays a checkbox for a settings field
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     array $args Settings field args.
 		 */
@@ -557,7 +557,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Displays a multicheckbox for a settings field
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     array $args Settings field args.
 		 */
@@ -582,7 +582,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Displays a radio button for a settings field
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     array $args Settings field args.
 		 */
@@ -605,7 +605,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Displays a radio button with images for a settings field
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     array $args Settings field args.
 		 */
@@ -629,7 +629,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Displays a selectbox for a settings field
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     array $args Settings field args.
 		 */
@@ -651,7 +651,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Displays a multi selectbox for a settings field
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     array $args Settings field args.
 		 */
@@ -673,7 +673,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Displays a textarea for a settings field
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     array $args Settings field args.
 		 */
@@ -690,7 +690,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Displays the html for a settings field
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     array $args Settings field args.
 		 */
@@ -701,7 +701,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Displays a rich text textarea for a settings field
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     array $args Settings field args.
 		 */
@@ -731,7 +731,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Displays a file upload field for a settings field
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     array $args Settings field args.
 		 */
@@ -750,7 +750,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Displays a password field for a settings field
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     array $args Settings field args.
 		 */
@@ -766,7 +766,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Displays a color picker field for a settings field
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     array $args Settings field args.
 		 */
@@ -782,7 +782,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Displays a select box for creating the pages select box
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     array $args Settings field args.
 		 */
@@ -800,7 +800,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Displays a select box for creating the categories select box
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     array $args Settings field args.
 		 */
@@ -819,7 +819,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Displays a select box for creating the categories select box
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     array $args Settings field args.
 		 */
@@ -840,7 +840,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Sanitize callback for Settings API
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     array $options Options to sanitize.
 		 * @return    mixed
@@ -867,7 +867,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		/**
 		 * Get sanitization callback for given option slug
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     string $slug Option slug.
 		 * @return    mixed        String or Bool false
@@ -899,7 +899,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		 * It retrieves the entire option group for the given section and then extracts the
 		 * value for the specified field.
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     string $option        The name of the settings field.
 		 * @param     string $section       The name of the section this field belongs to. This corresponds
@@ -924,7 +924,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		 *
 		 * Shows all the settings section labels as tab
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 */
 		public function show_navigation() {
@@ -950,7 +950,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		 *
 		 * This function displays every sections in a different form
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 * @param     string $button_text Save button text.
 		 */
@@ -981,7 +981,7 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		 *
 		 * This code uses localstorage for displaying active tabs
 		 *
-		 * @since     PluginVersion
+		 * @since     2.0.0
 		 * @access    public
 		 */
 		public function script() {
