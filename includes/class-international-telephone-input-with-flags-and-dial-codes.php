@@ -73,11 +73,11 @@ class International_Telephone_Input_With_Flags_And_Dial_Codes {
 	 *
 	 * Include the following files that make up the plugin:
 	 *
-	 * - International_Telephone_Input_With_Flags_And_Dial_Codes_Loader.  Orchestrates the hooks of the plugin.
-	 * - International_Telephone_Input_With_Flags_And_Dial_Codes_i18n.    Defines internationalization functionality.
-	 * - Sajjad_Dev_Settings_API.                                         Provides an interface for interacting with the WordPress Options API.
-	 * - International_Telephone_Input_With_Flags_And_Dial_Codes_Admin.   Defines all hooks for the admin area.
-	 * - International_Telephone_Input_With_Flags_And_Dial_Codes_Public.  Defines all hooks for the public side of the site.
+	 * - International_Telephone_Input_With_Flags_And_Dial_Codes_Loader. Orchestrates the hooks of the plugin.
+	 * - International_Telephone_Input_With_Flags_And_Dial_Codes_i18n.   Defines internationalization functionality.
+	 * - Sajjad_Dev_Settings_API.                                        Provides an interface for interacting with the WordPress Options API.
+	 * - International_Telephone_Input_With_Flags_And_Dial_Codes_Admin.  Defines all hooks for the admin area.
+	 * - International_Telephone_Input_With_Flags_And_Dial_Codes_Public. Defines all hooks for the public side of the site.
 	 *
 	 * Create an instance of the loader which will be used to register the hooks
 	 * with WordPress.
@@ -221,6 +221,7 @@ class International_Telephone_Input_With_Flags_And_Dial_Codes {
 	 *
 	 * @since     2.0.0
 	 * @access    public
+	 * @static
 	 * @param     string $option        The name of the settings field.
 	 * @param     string $section       The name of the section this field belongs to. This corresponds
 	 *                                  to the option name used in `register_setting()`.

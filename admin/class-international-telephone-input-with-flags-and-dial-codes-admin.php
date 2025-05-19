@@ -1,6 +1,6 @@
 <?php
 /**
- * This file contains the definition of the WP_Edit_Username_Admin class, which
+ * This file contains the definition of the International_Telephone_Input_With_Flags_And_Dial_Codes_Admin class, which
  * is used to load the plugin's admin-specific functionality.
  *
  * @package       International_Telephone_Input_With_Flags_And_Dial_Codes
