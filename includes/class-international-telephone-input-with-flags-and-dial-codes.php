@@ -220,8 +220,8 @@ class International_Telephone_Input_With_Flags_And_Dial_Codes {
 	 * value for the specified field.
 	 *
 	 * @since     2.0.0
-	 * @access    public
 	 * @static
+	 * @access    public
 	 * @param     string $option        The name of the settings field.
 	 * @param     string $section       The name of the section this field belongs to. This corresponds
 	 *                                  to the option name used in `register_setting()`.
