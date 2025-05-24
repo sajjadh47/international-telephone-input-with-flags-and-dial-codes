@@ -1,5 +1,7 @@
 # International Telephone Input With Flags And Dial Codes
 
+[![Plugin Banner](https://ps.w.org/international-telephone-input-with-flags-and-dial-codes/assets/banner-772x250.png)](https://wordpress.org/plugins/international-telephone-input-with-flags-and-dial-codes/)
+
 **Tags:** input, form, form-input, country-flag, dial-codes \
 **Tested up to:** 6.8 \
 **Requires PHP:** 8.1
