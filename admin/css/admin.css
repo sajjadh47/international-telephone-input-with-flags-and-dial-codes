@@ -3,3 +3,7 @@
 select.excludeCountries, select.onlyCountries {
 	width: 25rem!important;
 }
+
+.select2-container {
+	max-width: 25em;
+}

@@ -11,8 +11,7 @@
 /**
  * The core plugin class.
  *
- * This is used to define internationalization, admin-specific hooks, and
- * public-facing hooks.
+ * This is used to define admin-specific hooks and public-facing hooks.
  *
  * Also maintains the unique identifier of this plugin as well as the current
  * version of the plugin.
@@ -52,7 +51,7 @@ class International_Telephone_Input_With_Flags_And_Dial_Codes {
 	 * Define the core functionality of the plugin.
 	 *
 	 * Set the plugin name and the plugin version that can be used throughout the plugin.
-	 * Load the dependencies, define the locale, and set the hooks for the admin area and
+	 * Load the dependencies, set the hooks for the admin area and
 	 * the public-facing side of the site.
 	 *
 	 * @since     2.0.0
@@ -63,7 +62,6 @@ class International_Telephone_Input_With_Flags_And_Dial_Codes {
 		$this->plugin_name = 'international-telephone-input-with-flags-and-dial-codes';
 
 		$this->load_dependencies();
-		$this->set_locale();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
 	}
@@ -74,7 +72,6 @@ class International_Telephone_Input_With_Flags_And_Dial_Codes {
 	 * Include the following files that make up the plugin:
 	 *
 	 * - International_Telephone_Input_With_Flags_And_Dial_Codes_Loader. Orchestrates the hooks of the plugin.
-	 * - International_Telephone_Input_With_Flags_And_Dial_Codes_i18n.   Defines internationalization functionality.
 	 * - Sajjad_Dev_Settings_API.                                        Provides an interface for interacting with the WordPress Settings API.
 	 * - International_Telephone_Input_With_Flags_And_Dial_Codes_Admin.  Defines all hooks for the admin area.
 	 * - International_Telephone_Input_With_Flags_And_Dial_Codes_Public. Defines all hooks for the public side of the site.
@@ -93,12 +90,6 @@ class International_Telephone_Input_With_Flags_And_Dial_Codes {
 		require_once INTERNATIONAL_TELEPHONE_INPUT_WITH_FLAGS_AND_DIAL_CODES_PLUGIN_PATH . 'includes/class-international-telephone-input-with-flags-and-dial-codes-loader.php';
 
 		/**
-		 * The class responsible for defining internationalization functionality
-		 * of the plugin.
-		 */
-		require_once INTERNATIONAL_TELEPHONE_INPUT_WITH_FLAGS_AND_DIAL_CODES_PLUGIN_PATH . 'includes/class-international-telephone-input-with-flags-and-dial-codes-i18n.php';
-
-		/**
 		 * The class responsible for defining an interface for interacting with the WordPress Settings API.
 		 */
 		require_once INTERNATIONAL_TELEPHONE_INPUT_WITH_FLAGS_AND_DIAL_CODES_PLUGIN_PATH . 'includes/class-sajjad-dev-settings-api.php';
@@ -115,21 +106,6 @@ class International_Telephone_Input_With_Flags_And_Dial_Codes {
 		require_once INTERNATIONAL_TELEPHONE_INPUT_WITH_FLAGS_AND_DIAL_CODES_PLUGIN_PATH . 'public/class-international-telephone-input-with-flags-and-dial-codes-public.php';
 
 		$this->loader = new International_Telephone_Input_With_Flags_And_Dial_Codes_Loader();
-	}
-
-	/**
-	 * Define the locale for this plugin for internationalization.
-	 *
-	 * Uses the International_Telephone_Input_With_Flags_And_Dial_Codes_i18n class in order to set the domain and to register the hook
-	 * with WordPress.
-	 *
-	 * @since     2.0.0
-	 * @access    private
-	 */
-	private function set_locale() {
-		$plugin_i18n = new International_Telephone_Input_With_Flags_And_Dial_Codes_i18n();
-
-		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
 	}
 
 	/**
@@ -179,8 +155,7 @@ class International_Telephone_Input_With_Flags_And_Dial_Codes {
 	}
 
 	/**
-	 * The name of the plugin used to uniquely identify it within the context of
-	 * WordPress and to define internationalization functionality.
+	 * The name of the plugin used to uniquely identify it within the context of WordPress.
 	 *
 	 * @since     2.0.0
 	 * @access    public

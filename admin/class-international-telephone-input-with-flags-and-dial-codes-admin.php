@@ -67,7 +67,7 @@ class International_Telephone_Input_With_Flags_And_Dial_Codes_Admin {
 		$current_screen = get_current_screen();
 
 		// check if current page is plugin settings page.
-		if ( 'settings_page_international-telephone-input-with-flags-and-dial-codes' === $current_screen->id ) {
+		if ( 'toplevel_page_international-telephone-input-with-flags-and-dial-codes' === $current_screen->id ) {
 			wp_enqueue_style( $this->plugin_name, INTERNATIONAL_TELEPHONE_INPUT_WITH_FLAGS_AND_DIAL_CODES_PLUGIN_URL . 'admin/css/admin.css', array(), $this->version, 'all' );
 		}
 	}
@@ -82,7 +82,7 @@ class International_Telephone_Input_With_Flags_And_Dial_Codes_Admin {
 		$current_screen = get_current_screen();
 
 		// check if current page is plugin settings page.
-		if ( 'settings_page_international-telephone-input-with-flags-and-dial-codes' === $current_screen->id ) {
+		if ( 'toplevel_page_international-telephone-input-with-flags-and-dial-codes' === $current_screen->id ) {
 			wp_enqueue_script( $this->plugin_name, INTERNATIONAL_TELEPHONE_INPUT_WITH_FLAGS_AND_DIAL_CODES_PLUGIN_URL . 'admin/js/admin.js', array( 'jquery' ), $this->version, false );
 
 			wp_localize_script(
@@ -90,7 +90,7 @@ class International_Telephone_Input_With_Flags_And_Dial_Codes_Admin {
 				'InternationalTelephoneInputWithFlagsAndDialCodes',
 				array(
 					'ajaxurl'          => admin_url( 'admin-ajax.php' ),
-					'selectCountryTxt' => __( 'Please Select a Country/Countries...', 'international-telephone-input-with-flags-and-dial-codes' ),
+					'selectCountryTxt' => __( 'Please Select Countries...', 'international-telephone-input-with-flags-and-dial-codes' ),
 				)
 			);
 		}
@@ -105,7 +105,7 @@ class International_Telephone_Input_With_Flags_And_Dial_Codes_Admin {
 	 * @return    array $links The updated array of plugin action links, including the settings link.
 	 */
 	public function add_plugin_action_links( $links ) {
-		$links[] = sprintf( '<a href="%s">%s</a>', esc_url( admin_url( 'options-general.php?page=international-telephone-input-with-flags-and-dial-codes' ) ), __( 'Settings', 'international-telephone-input-with-flags-and-dial-codes' ) );
+		$links[] = sprintf( '<a href="%s">%s</a>', esc_url( admin_url( 'admin.php?page=international-telephone-input-with-flags-and-dial-codes' ) ), __( 'Settings', 'international-telephone-input-with-flags-and-dial-codes' ) );
 
 		return $links;
 	}
@@ -117,12 +117,13 @@ class International_Telephone_Input_With_Flags_And_Dial_Codes_Admin {
 	 * @access    public
 	 */
 	public function admin_menu() {
-		add_options_page(
+		add_menu_page(
 			__( 'Intl Telephone Input', 'international-telephone-input-with-flags-and-dial-codes' ),
-			__( 'Intl Telephone Input', 'international-telephone-input-with-flags-and-dial-codes' ),
+			__( 'Intl Tel Input', 'international-telephone-input-with-flags-and-dial-codes' ),
 			'manage_options',
 			'international-telephone-input-with-flags-and-dial-codes',
 			array( $this, 'menu_page' ),
+			'dashicons-phone'
 		);
 	}
 
