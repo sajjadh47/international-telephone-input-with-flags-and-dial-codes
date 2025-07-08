@@ -49,6 +49,9 @@ If successful, click Activate Plugin to activate it, or Return to Plugin Install
 
 ## Changelog
 
+### 2.0.2
+- Geo Location Db updated
+
 ### 2.0.1
 - Checked for latest wp version 6.8
 
