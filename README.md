@@ -49,6 +49,9 @@ If successful, click Activate Plugin to activate it, or Return to Plugin Install
 
 ## Changelog
 
+### 2.0.3
+* Fixed issue: typo giving fatal error
+
 ### 2.0.2
 - Geo Location Db updated
 

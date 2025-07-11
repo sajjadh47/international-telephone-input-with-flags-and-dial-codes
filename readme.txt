@@ -4,7 +4,7 @@ Contributors: sajjad67
 Author: Sajjad Hossain Sagor
 Tested up to: 6.8
 Requires at least: 5.6
-Stable tag: 2.0.2
+Stable tag: 2.0.3
 Requires PHP: 8.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -41,6 +41,8 @@ If successful, click Activate Plugin to activate it, or Return to Plugin Install
 3. Go to your Dashboard ->Settings -> Intl Telephone Input & Adjust Your Settings Accordingly.
 
 == Changelog ==
+= 2.0.3 =
+- Fixed issue: typo giving fatal error
 = 2.0.2 =
 - Geo Location Db updated
 = 2.0.1 =
