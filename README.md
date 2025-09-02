@@ -49,8 +49,14 @@ If successful, click Activate Plugin to activate it, or Return to Plugin Install
 
 ## Changelog
 
+### 2.0.5
+- Geo Location Db updated to the last version.
+
+### 2.0.4
+- Fixed issue: phone number now saves with country code
+
 ### 2.0.3
-* Fixed issue: typo giving fatal error
+- Fixed issue: typo giving fatal error
 
 ### 2.0.2
 - Geo Location Db updated

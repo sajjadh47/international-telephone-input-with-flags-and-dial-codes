@@ -4,7 +4,7 @@ Contributors: sajjad67
 Author: Sajjad Hossain Sagor
 Tested up to: 6.8
 Requires at least: 5.6
-Stable tag: 2.0.4
+Stable tag: 2.0.5
 Requires PHP: 8.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -38,9 +38,11 @@ After Activating The Plugin, Go To Plugin Settings Page & do necessary changes. 
 3. Drag / Click upload the plugin zip file
 4. The resulting installation screen will list the installation as successful or note any problems during the install.
 If successful, click Activate Plugin to activate it, or Return to Plugin Installer for further actions.
-3. Go to your Dashboard ->Settings -> Intl Telephone Input & Adjust Your Settings Accordingly.
+3. Go to your Dashboard -> Settings -> Intl Telephone Input & Adjust Your Settings Accordingly.
 
 == Changelog ==
+= 2.0.5 =
+- Geo Location Db updated to the last version.
 = 2.0.4 =
 - Fixed issue: phone number now saves with country code
 = 2.0.3 =
@@ -54,14 +56,17 @@ If successful, click Activate Plugin to activate it, or Return to Plugin Install
 = 1.0.6 =
 - Plugin crash fix for old PHP version. It will work now for php starting 7.2
 = 1.0.5 =
-* Minor Update.. tested for latest wp compatibility. Updated MaxMind Geo DB To Latest Version.
+- Minor Update.. tested for latest wp compatibility. Updated MaxMind Geo DB To Latest Version.
 = 1.0.4 =
-* Added compatibility support to cache plugins. Updated MaxMind Geo DB To Latest Version.
+- Added compatibility support to cache plugins. Updated MaxMind Geo DB To Latest Version.
 = 1.0.3 =
-* Separated country code from input field and appended the country code to the final value of the input when submit.
+- Separated country code from input field and appended the country code to the final value of the input when submit.
 = 1.0.2 =
-* Compatibility check for wp 6.3.
+- Compatibility check for wp 6.3.
 = 1.0.1 =
-* Compatibility check for wp 6.0.
+- Compatibility check for wp 6.0.
 = 1.0.0 =
-* Initial release.
+- Initial release.
+
+== Upgrade Notice ==
+Always try to keep your plugin update so that you can get the improved and additional features added to this plugin up to date.
